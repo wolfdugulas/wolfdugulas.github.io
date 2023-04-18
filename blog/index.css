@@ -1,0 +1,59 @@
+/* Custom CSS for centering blog feed */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+/* Custom CSS for video at top of the page */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: all 0.3s ease-in-out; /* Added transition for smooth effect */
+}
+
+.mini-video-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 200px; /* Adjust size of mini player */
+  z-index: 999;
+  opacity: 0; /* Hide mini player by default */
+  transition: all 0.3s ease-in-out; /* Added transition for smooth effect */
+}
+
+#video-player {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+}
+
+#mini-video-player {
+  width: 100%;
+  height: auto;
+}
+
+/* Custom CSS for spacing blog feed below the video */
+.blog-feed-container {
+  margin-top: 100vh; /* Adjust this value to set the space below the video */
+}
+
+
+#card-img{
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 767px) {
+  #card-img{
+    width: 100%;
+  }
+}
+
+.card{
+  width: 100%;
+}

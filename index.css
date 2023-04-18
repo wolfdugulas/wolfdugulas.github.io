@@ -1,0 +1,118 @@
+/* Animációk */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Címsor animáció */
+.hero-heading {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Bemutató szekció animáció */
+.services-section {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Referenciák szekció animáció */
+.testimonials-section {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Kapcsolat szekció animáció */
+.contact-section {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Ürlap animáció */
+.contact-form {
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (max-width: 767px) {
+  .card-image {
+    min-height: 320px;
+  }
+}
+
+.blur-bg-box{
+  border: 1px solid white;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* Fade in animáció */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+  
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+/* Slide up animáció */
+.slide-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 1s ease-in-out forwards;
+}
+  
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+/* Spin animáció */
+.spin {
+  animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

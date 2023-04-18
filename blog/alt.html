@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf Duguláselhárítás</title>
+    <!-- CSS fájlok betöltése -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../index.css">
+</head>
+
+<body>
+  <!-- Navigációs sáv -->
+  <nav class="navbar navbar-expand-lg bg-light sticky-top bg-dark" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Wolf Duguláselhárítás</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link active" href="../index.html">Főoldal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#services-section">Szolgáltatások</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html#contact-section">Kapcsolat</a>
+          </li>
+          <li class="nav-item">
+            <a href="tel:+36208017256" class="btn btn-primary">Hívjon most! +36 20 801 7256</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+
+    <!-- lábjegyzet -->
+    <footer class="text-center py-3">
+        <p>Minden jog fenntartva &copy; 2023 Wolf Duguláselhárítás</p>
+    </footer>
+    
+      <!-- JS betöltése -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.3/umd/popper.min.js"></script>
+  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <!-- CSS animációk -->
+      <style>
+        /* Fade in animáció */
+        .fade-in {
+          opacity: 0;
+          animation: fadeIn 1s ease-in-out forwards;
+        }
+    
+        @keyframes fadeIn {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        /* Slide up animáció */
+        .slide-up {
+          opacity: 0;
+          transform: translateY(20px);
+          animation: slideUp 1s ease-in-out forwards;
+        }
+    
+        @keyframes slideUp {
+          0% {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+        /* Spin animáció */
+        .spin {
+          animation: spin 2s linear infinite;
+        }
+    
+        @keyframes spin {
+          0% {
+            transform: rotate(0);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      </style>
+      <!-- JS animációk -->
+      <script>
+        // Scrollra animációk hozzáadása
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            // Fade in animáció
+            $(".fade-in").each(function () {
+              var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+              var bottom_of_window = $(window).scrollTop() + $(window).height();
+              if (bottom_of_window > bottom_of_element) {
+                $(this).addClass("fade-in-animation");
+              }
+            });
+    
+            // Slide up animáció
+            $(".slide-up").each(function () {
+              var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+              var bottom_of_window = $(window).scrollTop() + $(window).height();
+              if (bottom_of_window > bottom_of_element) {
+                $(this).addClass("slide-up-animation");
+              }
+            });
+    
+            // Spin animáció
+            $(".spin").each(function () {
+              var bottom_of_element = $(this).offset().top + $(this).outerHeight() / 2;
+              var bottom_of_window = $(window).scrollTop() + $(window).height();
+              if (bottom_of_window > bottom_of_element) {
+                $(this).addClass("spin-animation");
+              }
+            });
+          });
+        });
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
+</body>
+</html>        
